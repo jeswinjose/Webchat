@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+    <servlet>
+        <servlet-name>chatsend</servlet-name>
+        <servlet-class>com.bro.servlets.ClientSend</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>chatsend</servlet-name>
+        <url-pattern>/chatsend</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>chatrecieve</servlet-name>
+        <servlet-class>com.bro.servlets.ClientRecieve</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>chatrecieve</servlet-name>
+        <url-pattern>/chatrecieve</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>StartUp</servlet-name>
+    <servlet-class> com.bro.init.StartUp</servlet-class>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+</web-app>
